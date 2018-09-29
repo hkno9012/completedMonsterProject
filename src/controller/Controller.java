@@ -8,18 +8,18 @@ public class Controller
 {
 	//Data member section
 	//Declaration section
-	private MarshmallowMonster myMonster;//All data members should be private
+	//All data members should be private
+	private MarshmallowMonster myMonster;//myMonster object is initialized, and will then be constructed
 	private MarshmallowMonster userMonster;
 //_____________________________________________________________________________
-	//Constructors initialize objects
+	//Constructors construct object: put all the objects in here (for now)
 	//Constructors must have the same name as the class, and they can't have an explicit return type
 	public Controller()
 	{
 		myMonster = new MarshmallowMonster("Larry", 2.5, 4, true, 6);
-		//A new MarshmallowMonster object is declared with these parameters
-		//new means that the constructor with these specific types of parameters is being called
+		//A new MarshmallowMonster object is constructed with these parameters
 		userMonster = new MarshmallowMonster();
-		//Another new MarshmallowMonster object is declared, but no parameters
+		//Another new MarshmallowMonster object is constructed, but no parameters
 	}
 //____________________________________________________________________________________
 	public void start()
